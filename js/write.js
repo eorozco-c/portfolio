@@ -15,8 +15,8 @@ function typeWriter(text, elemId) {
     type();
 }
 
-var text1 = "Hello, my name is Ernesto Orozco";
-var text2 = "I am a Full Stack developer";
+var text1 = "Hola, mi nombre es Ernesto Orozco";
+var text2 = "Soy Full Stack developer";
 
 typeWriter(text1, "writing-1");
 
