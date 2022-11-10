@@ -8,193 +8,232 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="preload" href="css/styles.css" as="style" />
     <link rel="stylesheet" href="css/styles.css" />
+    <!--icon-->
+    <link rel="icon" href="img/favicon.ico" />
   </head>
 
   <body>
-    <header>
-      <img src="img/foto_descente.jpg" alt="Foto Personal" />
-      <div>
-        <h1 class="titulo">Ernesto Orozco</h1>
-        <h2>Desarrollador Full Stack</h2>
+
+    <header class="bg_animate">
+      <div class="header_nav">
+          <nav class="navbar">
+              <a href="#about" class="nav-about">About Me</a>
+              <a href="#portfolio" class="nav-portfolio">Portfolio</a>
+              <a href="#skills" class="nav-skills">Skills</a>
+              <a href="#contact" class="nav-contact">Contact</a>
+            </nav>
       </div>
+
+      <section class="banner container">
+        <section id="banner_tittle">
+          <h2 id="writing-1"></h2>
+          <h3 id="writing-2"></h3>
+        </section>
+        <div class="banner_img">
+          <img src="img/rubik_sinborde.png" alt="Rubik" />
+        </div>
+      </section>
     </header>
 
-    <!--Asi se comenta en HTML-->
+    <main>
+      <div class="container">
 
-    <div class="nav-bg">
-      <nav class="navegacion-principal contenedor">
-        <a href="#">Inicio</a>
-        <a href="#">Sobre Mi</a>
-        <a href="contacto.html">Contacto</a>
-      </nav>
-    </div>
+        <section class="about">
+          <h2>About me</h2>
+          <p>
+            Solidos conocimientos de Python, Django, JavaScript, CSS3, HTML5, Scripting y administración de Infraestructuras TI. 
+Soy un profesional proactivo y autodidacta con altas capacidades de aprendizaje y con amplia experiencia en la supervisión, seguimiento y la evaluación de incidentes. Coordino excelentemente varias tareas y trabajo bajo presión de manera eficaz y con una perspectiva carismática. 
 
-    <section class="hero">
-      <div class="contenido-hero">
-        <h2 class="">Diseño y Desarrollo Web</h2>
+          </p>
+        </section>
 
-        <div class="ubicacion">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-map-pin"
-            width="80"
-            height="80"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#00bfd8"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <circle cx="12" cy="11" r="3" />
-            <path
-              d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
-            />
-          </svg>
+        <section class="portfolio">
+          <h2>Portfolio</h2>
+          <div class="portfolio_container">
+            <div class="portfolio_item">
+              <img src="img/1.png" alt="Portfolio" />
+              <div class="portfolio_item_info">
+                <h3>Portfolio 1</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam voluptas, quae, quod, voluptates quibusdam
+                  voluptatibus quidem voluptatum quos quia quas nesciunt.
+                  Quisquam, quae.
+                </p>
+              </div>
+            </div>
+            <div class="portfolio_item">
+              <img src="img/2.png" alt="Portfolio" />
+              <div class="portfolio_item_info">
+                <h3>Portfolio 2</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam voluptas, quae, quod, voluptates quibusdam
+                  voluptatibus quidem voluptatum quos quia quas nesciunt.
+                  Quisquam, quae.
+                </p>
+              </div>
+            </div>
+            <div class="portfolio_item">
+              <img src="img/3.png" alt="Portfolio" />
+              <div class="portfolio_item_info">
+                <h3>Portfolio 3</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam voluptas, quae, quod, voluptates quibusdam
+                  voluptatibus quidem voluptatum quos quia quas nesciunt.
+                  Quisquam, quae.
+                </p>
+              </div>
+            </div>
+            <div class="portfolio_item">
+              <img src="img/4.png" alt="Portfolio" />
+              <div class="portfolio_item_info">
+                <h3>Portfolio 4</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam voluptas, quae, quod, voluptates quibusdam
+                  voluptatibus quidem voluptatum quos quia quas nesciunt.
+                  Quisquam, quae.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="skills">
+          <h2>Skills</h2>
+          <div class="skills_container">
+            <div class="skill">
+              <img src="img/linux.png" alt="Linux" />
+              <p>Linux</p>
+            </div>
+            <div class="skill">
+              <img src="img/asterisk.png" alt="Asterisk" />
+              <p>Asterisk PBX</p>
+            </div>
+            <div class="skill">
+              <img src="img/git.png" alt="GIT" />
+              <p>GIT</p>
+            </div>
+            <div class="skill">
+              <img src="img/python.png" alt="Python" />
+              <p>Python</p>
+            </div>
+            <div class="skill">
+              <img src="img/django.png" alt="Django" />
+              <p>Django</p>
+            </div>
+            <div class="skill">
+              <img src="img/php.png" alt="PHP" />
+              <p>PHP</p>
+            </div>
+            <div class="skill">
+              <img src="img/mariadb.png" alt="MariaDB" />
+              <p>MariaDB</p>
+            </div>
+            <div class="skill">
+              <img src="img/postgresql.png" alt="Postgresql" />
+              <p>Postgresql</p>
+            </div>
 
-          <p>Santiago, Chile</p>
+            <div class="skill">
+              <img src="img/html.png" alt="HTML" />
+              <p>HTML</p>
+            </div>
+            <div class="skill">
+              <img src="img/css.png" alt="CSS" />
+              <p>CSS</p>
+            </div>
+            <div class="skill">
+              <img src="img/js.png" alt="JavaScript" />
+              <p>JavaScript</p>
+            </div>
+            <div class="skill">
+              <img src="img/wordpress.png" alt="WordPress" />
+              <p>WordPress</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!--form contact-->
+    <section class="contact">
+      <div class="container">
+        <div class="contact_container">
+          <h2>Contact</h2>
+          <form action="index.html" method="post">
+            <input type="text" name="name" placeholder="Name" />
+            <input type="email" name="email" placeholder="Email" />
+            <textarea name="message" placeholder="Message"></textarea>
+            <input type="submit" value="Send" class="button_primary"/>
+          </form>
         </div>
-        <a class="boton" href="contacto.html">Contactar</a>
       </div>
     </section>
 
-    <main class="contenedor sombra">
-      <h2 class="">Mis servicios</h2>
-
-      <div class="servicios">
-        <section class="servicio-individual">
-          <h3>Front-end</h3>
-          <div class="iconos">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-palette"
-              width="40"
-              height="40"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="#000000"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M12 21a9 9 0 1 1 0 -18a9 8 0 0 1 9 8a4.5 4 0 0 1 -4.5 4h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25"
-              />
-              <circle cx="7.5" cy="10.5" r=".5" fill="currentColor" />
-              <circle cx="12" cy="7.5" r=".5" fill="currentColor" />
-              <circle cx="16.5" cy="10.5" r=".5" fill="currentColor" />
-            </svg>
-          </div>
-          <p>
-            Dolorem aliquid praesentium odio consequatur aut non, obcaecati,
-            eius veritatis dolores quidem expedita? Consectetur vitae explicabo
-            voluptatem iste! Minus perferendis consectetur mollitia.
-          </p>
-        </section>
-
-        <section class="servicio-individual">
-          <h3>Back-end</h3>
-          <div class="iconos">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-credit-card"
-              width="40"
-              height="40"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="#000000"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <rect x="3" y="5" width="18" height="14" rx="3" />
-              <line x1="3" y1="10" x2="21" y2="10" />
-              <line x1="7" y1="15" x2="7.01" y2="15" />
-              <line x1="11" y1="15" x2="13" y2="15" />
-            </svg>
-          </div>
-
-          <p>
-            Dolorem aliquid praesentium odio consequatur aut non, obcaecati,
-            eius veritatis dolores quidem expedita? Consectetur vitae explicabo
-            voluptatem iste! Minus perferendis consectetur mollitia.
-          </p>
-        </section>
-      </div>
-
-      <section>
-        <h2>Mis Redes</h2>
-        <form action="" class="formulario">
-          <fieldset>
-            <legend>Buscame en las siguientes redes:</legend>
-            <div class="contenedor-campos">
-              <div class="campos-rrss">
-                <a href="https://github.com/eorozco-c">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="icon icon-tabler icon-tabler-brand-github"
-                    width="80"
-                    height="80"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="#00bfd8"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path
-                      d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
-                    /></svg
-                ></a>
-
-                <h5>
-                  <a href="https://github.com/ElNennu">github.com/eorozco-c</a>
-                </h5>
-              </div>
-              <div class="campos-rrss">
-                <a
-                  href="https://www.linkedin.com/in/ernesto-orozco-castro-9bbb6b100/"
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="icon icon-tabler icon-tabler-brand-linkedin"
-                    width="80"
-                    height="80"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="#00bfd8"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <rect x="4" y="4" width="16" height="16" rx="2" />
-                    <line x1="8" y1="11" x2="8" y2="16" />
-                    <line x1="8" y1="8" x2="8" y2="8.01" />
-                    <line x1="12" y1="16" x2="12" y2="11" />
-                    <path d="M16 16v-3a2 2 0 0 0 -4 0" /></svg
-                ></a>
-                <h5>
-                  <a href="https://www.linkedin.com/in/ernesto-orozco-castro/"
-                    >Ernesto Orozco</a
-                  >
-                </h5>
-              </div>
-            </div>
-          </fieldset>
-        </form>
-      </section>
-    </main>
     <footer>
-      <p>Todos los derechos reservados, Ernesto Orozco</p>
+        <div class="footer_container">
+          <div class="footer_item">
+            <p>
+              Copyright 2022 - All rights reserved
+            </p>
+          </div>
+          <div class="footer_item">
+            <p>
+              LinkedIn | GitHub | Twitter
+            </p>
+          </div>
+          <div class="footer_item">
+            <p>
+              +55 11 99999-9999
+            </p>
+            <p>
+              ernestorozco94@gmail.com
+            </p>
+            <p>
+              Santiago - Chile
+            </p>
+          </div>
+      </div>
     </footer>
+
+  <script src="js/write.js"></script>
+  <script>
+    //when i click on about me button i want to scroll to about me section
+    const aboutMeButton = document.querySelector(".nav-about");
+    const aboutMeSection = document.querySelector(".about");
+    aboutMeButton.addEventListener("click", () => {
+      aboutMeSection.scrollIntoView({ behavior: "smooth" });
+    });
+    //when i click on portfolio button i want to scroll to portfolio section
+    const portfolioButton = document.querySelector(".nav-portfolio");
+    const portfolioSection = document.querySelector(".portfolio");
+    portfolioButton.addEventListener("click", () => {
+      portfolioSection.scrollIntoView({ behavior: "smooth" });
+    });
+
+    //when i click on skills button i want to scroll to skills section
+    const skillsButton = document.querySelector(".nav-skills");
+    const skillsSection = document.querySelector(".skills");
+    skillsButton.addEventListener("click", () => {
+      skillsSection.scrollIntoView({ behavior: "smooth" });
+    });
+
+    //when i click on contact button i want to scroll to contact section
+    const contactButton = document.querySelector(".nav-contact");
+    const contactSection = document.querySelector(".contact");
+    contactButton.addEventListener("click", () => {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    });
+  </script>
+
   </body>
 </html>
+
+ 
