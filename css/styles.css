@@ -1,14 +1,14 @@
 :root {
   /* paleta de colores */
-  --blanco: #ffffff;
+  --blanco: #FFEFD6;
   --oscuro: #212121;
-  --primario: #E14D2A;
-  --secundario: #FD841F;
+  --primario: #FD841F;
+  --secundario: #F2DEBA;
   --secundarioClaro: #FFA500;
   --terciario: #3E6D9C;
   --terciarioClaro: #5C8DBA;
-  --cuaternario: #001253;
-  --cuaternarioClaro: #002D7F;
+  --cuaternario: #3A8891;
+  --cuaternarioClaro: #085c77;
   --gris: #757575;
   --grisClaro: #c2c2c2;
 }
@@ -60,6 +60,11 @@ h3 {
   font-size: 1.8rem;
   text-decoration: none;
   margin-top: 2rem;
+  cursor: pointer;
+}
+
+.button_primary:hover {
+  background-color: var(--secundarioClaro);
 }
 
 .bg_animated {
@@ -125,7 +130,12 @@ h3 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  animation: rotate 20s linear infinite;
+  /* animation: rotate 20s linear infinite; */
+  /*cut the gif up and down to center */
+  clip-path: polygon(0 10%, 60% 10%, 100% 90%, 40% 90%);
+  /* add rounded corners to the clip-path */
+  border-radius: 1rem;
+
 }
 
 @keyframes rotate {
@@ -137,15 +147,16 @@ h3 {
   }
 }
 
-.about{
-  align-items: center;
-  background-color: var(--cuaternarioClaro);
-  padding: 4rem 2rem;
-}
 
 .about p {
   font-size: 1.8rem;
   margin-bottom: 2rem;
+}
+
+.about_container {
+  background-color: var(--cuaternarioClaro);
+  padding: 2rem 2rem;
+  border-radius: 1rem;
 }
 
 .portfolio{
@@ -164,10 +175,16 @@ h3 {
   border-radius: 1rem;
 }
 
-.portfolio_item img{
+.portfolio_img{
+  width: 30rem;
+  height: 30rem;
+  margin: 0 auto;
+}
+
+.portfolio_img img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  border-radius: 1rem;
 }
 
 .portfolio_item_info{
@@ -219,6 +236,7 @@ h3 {
   align-items: center;
   border: 1px solid var(--grisClaro);
   padding: 2rem;
+  border-radius: 1rem;
 
 }
 
@@ -242,21 +260,51 @@ h3 {
 
 footer {
   background-color: var(--cuaternarioClaro);
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
+
 }
 
 .footer_container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  text-align: center;
 }
 
 .footer_container p {
   font-size: 1.8rem;
 }
 
+.footer_item {
+  align-self: center;
+}
 
+.footer_item a{
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 1.8rem;
+  margin: 0 1rem;
+}
+
+.ubicacion{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+}
+
+.ubicacion img{
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.bandera{
+  width: 5%;
+  height: 5%;
+  object-fit: cover;
+}
 
 /*when screen is less than 1000px*/
 @media screen and (max-width: 1000px) {

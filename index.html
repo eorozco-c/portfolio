@@ -7,12 +7,9 @@
     <link rel="preload" href="css/normalize.css" as="style" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="preload" href="css/styles.css" as="style" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://kit.fontawesome.com/375104de3a.js" crossorigin="anonymous"></script>
     <!--icon-->
     <link rel="icon" href="img/favicon.ico" />
   </head>
@@ -31,11 +28,15 @@
 
       <section class="banner container">
         <section id="banner_tittle">
-          <h2 id="writing-1"></h2>
-          <h3 id="writing-2"></h3>
+          <!-- <h1 id="writing-1"></h1>
+          <h3 id="writing-2"></h3> -->
+          <h1 class="typewrite" data-period="2000" data-type='[ "Hola, mi nombre es Ernesto Orozco...", "Soy Desarrollador Full Stack..." ]'>
+            <span class="wrap"></span></h1>
         </section>
         <div class="banner_img">
-          <img src="img/rubik_sinborde.png" alt="Rubik" />
+          <!-- <img src="img/rubik_sinborde.png" alt="Rubik" /> -->
+          <!--rubik gif-->
+          <img src="img/rubik.gif" alt="Rubik" />
         </div>
       </section>
     </header>
@@ -45,61 +46,61 @@
 
         <section class="about">
           <h2>Acerca de mi</h2>
-          <p>
-            Solidos conocimientos de Python, Django, JavaScript, CSS3, HTML5, Scripting y administración de Infraestructuras TI. 
-Soy un profesional proactivo y autodidacta con altas capacidades de aprendizaje y con amplia experiencia en la supervisión, seguimiento y la evaluación de incidentes. Coordino excelentemente varias tareas y trabajo bajo presión de manera eficaz y con una perspectiva carismática. 
-
-          </p>
+          <div class="about_container">
+            <p>
+              Tengo sólidos conocimientos de Python, Django, JavaScript, CSS3, HTML5, Scripting y administración de Infraestructuras TI. 
+  Soy un profesional proactivo y autodidacta con altas capacidades de aprendizaje y con amplia experiencia en la supervisión, seguimiento y la evaluación de incidentes. Coordino excelentemente varias tareas y trabajo bajo presión de manera eficaz y con una perspectiva carismática.
+            </p>
+            <p>
+              Soy desarrollador Full Stack pero me siento más cómodo trabajando tras bambalinas, en el lado del servidor, pero también me gusta el lado del cliente, por eso me gusta trabajar con Django, ya que me permite trabajar en ambos lados.
+            </p>
+          </div>
         </section>
 
         <section class="portfolio">
           <h2>Portfolio</h2>
           <div class="portfolio_container">
             <div class="portfolio_item">
-              <img src="img/1.png" alt="Portfolio" />
+              <div class="portfolio_img">
+                <img src="img/corus.jpg" alt="Portfolio" />
+              </div>
               <div class="portfolio_item_info">
-                <h3>Portfolio 1</h3>
+                <h3>Corus - Contact Center</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quisquam voluptas, quae, quod, voluptates quibusdam
-                  voluptatibus quidem voluptatum quos quia quas nesciunt.
-                  Quisquam, quae.
+                  Plataforma de telefonía capaz de gestionar flujo y distribución de llamadas y fácil de integrar con cualquier servicio externo como SMS, WhatsApp, entre otros.
                 </p>
               </div>
             </div>
             <div class="portfolio_item">
-              <img src="img/2.png" alt="Portfolio" />
+              <div class="portfolio_img">
+                <img src="img/mantenedor_correos.png" alt="Portfolio" />
+              </div>
               <div class="portfolio_item_info">
-                <h3>Portfolio 2</h3>
+                <h3>Plataforma Correo a TTS</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quisquam voluptas, quae, quod, voluptates quibusdam
-                  voluptatibus quidem voluptatum quos quia quas nesciunt.
-                  Quisquam, quae.
+                  Plataforma que está constantemente leyendo una casilla de correos y genera llamadas a los usuarios con la información del email.
                 </p>
               </div>
             </div>
             <div class="portfolio_item">
-              <img src="img/3.png" alt="Portfolio" />
+              <div class="portfolio_img">
+                <img src="img/clinspa.jpg" alt="Portfolio" />
+              </div>
               <div class="portfolio_item_info">
-                <h3>Portfolio 3</h3>
+                <h3>Plataforma de cálculos basado en plantillas</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quisquam voluptas, quae, quod, voluptates quibusdam
-                  voluptatibus quidem voluptatum quos quia quas nesciunt.
-                  Quisquam, quae.
+                  Plataforma que se encarga de obtener parámetros de entradas y puntos de medición que con datos filtrados por fecha se generan informes PDF y gráficos de tendencias para su posterior análisis.
                 </p>
               </div>
             </div>
             <div class="portfolio_item">
-              <img src="img/4.png" alt="Portfolio" />
+              <div class="portfolio_img">
+                <img src="img/sisrg.jpg" alt="Portfolio" />
+              </div>
               <div class="portfolio_item_info">
-                <h3>Portfolio 4</h3>
+                <h3>Sistema de Rendicion de Gastos</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quisquam voluptas, quae, quod, voluptates quibusdam
-                  voluptatibus quidem voluptatum quos quia quas nesciunt.
-                  Quisquam, quae.
+                  Sistema que permite a los usuarios de la empresa cargar sus gastos y generar informes de rendición de gastos.
                 </p>
               </div>
             </div>
@@ -167,7 +168,7 @@ Soy un profesional proactivo y autodidacta con altas capacidades de aprendizaje 
       <div class="container">
         <div class="contact_container">
           <h2>Contacto</h2>
-          <form action="index.html" method="post">
+          <form action="https://formspree.io/f/xbjbqbrk" method="POST">
             <input type="text" name="name" placeholder="Nombre" />
             <input type="email" name="email" placeholder="Email" />
             <textarea name="message" placeholder="Mensaje"></textarea>
@@ -181,24 +182,28 @@ Soy un profesional proactivo y autodidacta con altas capacidades de aprendizaje 
         <div class="footer_container">
           <div class="footer_item">
             <p>
-              Copyright 2022 - Derechos Reservados
+              © 2022 - Derechos Reservados
             </p>
           </div>
           <div class="footer_item">
             <p>
-              LinkedIn | GitHub | Twitter
+              <!--fa-linkedin grande-->
+              <a  target="_blank" href="https://www.linkedin.com/in/ernesto-orozco-castro/"><i class="fab fa-linkedin fa-2x"></i></a> | <a target="_blank" href="https://github.com/eorozco-c"><i class="fab fa-github fa-2x"></i></a>
             </p>
           </div>
           <div class="footer_item">
             <p>
-              +569 6123 9957
+              Teléfono: +569 6123 9957
             </p>
             <p>
-              ernestorozco94@gmail.com
+              Email: ernestorozco94@gmail.com
             </p>
-            <p>
-              Santiago - Chile
-            </p>
+            <div class="ubicacion">
+              <img src="img/chile.png" alt="Chile" class="bandera"/>
+              <p>Santiago - Chile </p>
+              
+            </div>
+              
           </div>
       </div>
     </footer>
@@ -231,6 +236,7 @@ Soy un profesional proactivo y autodidacta con altas capacidades de aprendizaje 
     contactButton.addEventListener("click", () => {
       contactSection.scrollIntoView({ behavior: "smooth" });
     });
+
   </script>
 
   </body>
