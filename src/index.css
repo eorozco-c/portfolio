@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 100% 50%; }
+  50% { background-position: 100% 50%; }
+  75% { background-position: 0% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+:root {
+  --tw-gradient-stops: var(--tw-gradient-from, transparent), var(--tw-gradient-to, transparent);
+}
+
+body {
+  @apply min-h-screen bg-gradient-to-br from-[#3A8891] via-[#1c4d56] to-[#0F3057] text-white;
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+.portfolio_item {
+  transition: transform 0.3s;
+  background-color: #2d3748; /* Tailwind's gray-800 color for better compatibility */
+  color: #e2e8f0; /* Tailwind's gray-200 color for better readability */
+}
+
+.portfolio_item:hover {
+  transform: scale(1.05);
+}
+
+.portfolio_img img {
+  border-bottom: 1px solid #e5e7eb; /* Tailwind's gray-200 color */
+}
+
+.portfolio_item_info h3 {
+  color: #edf2f7; /* Tailwind's gray-100 color */
+}
+
+.portfolio_item_info p {
+  color: #cbd5e0; /* Tailwind's gray-400 color */
+}
